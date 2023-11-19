@@ -24,8 +24,14 @@ int main()
             else c2 = i;
         }
     }
-    printf("слово:\n");
-    for (i = c1; i < c2; i++)
+    if (number != 1 && c1 == 0)
+    {
+        c1 = c2;
+        c2 = strlen(str);
+    }
+    if (number = 1) c1 = -1;
+    printf("Слово: ");
+    for (i = c1 + 1; i < c2; i++)
     {
         printf("%c", str[i]);
     }
