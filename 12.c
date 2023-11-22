@@ -29,9 +29,13 @@ int main()
         c1 = c2;
         c2 = strlen(str);
     }
-    if (number = 1) c1 = -1;
+    if (number == 1) c1 = -1;
     printf("Слово: ");
-    for (i = c1 + 1; i < c2; i++)
+    for (i = 0; i < (c1 + 1); i++)
+    {
+        printf("%c", str[i]);
+    }
+    for (i = (c2 + 1); i < strlen(str); i++)
     {
         printf("%c", str[i]);
     }
