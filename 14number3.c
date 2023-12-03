@@ -32,5 +32,6 @@ int main()
     pointer = change;
     pointer(s, elem, &a);
     printf("\nКоличество замен: %d", a);
+    free(arr);
     return 0;
 }
