@@ -30,7 +30,7 @@ int main()
         c2 = strlen(str);
     }
     if (number == 1) c1 = -1;
-    printf("Слово: ");
+    printf("Итоговая строка: ");
     for (i = 0; i < (c1 + 1); i++)
     {
         printf("%c", str[i]);
