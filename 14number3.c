@@ -3,8 +3,9 @@
 #include <string.h>
 #include <ctype.h>
 
-void change(char *s, char elem, int count, int *a)
+void change(char *s, char elem, int *a)
 {
+    int count;
     for (int i = 0; i < strlen(s); i++)
     {
         if (s[i] == elem) 
@@ -20,8 +21,8 @@ void change(char *s, char elem, int count, int *a)
 int main()
 {
     char elem, *s;
-    void (*pointer)(char *s, char elem, int count, int *a);
-    int count = 0, i, a = 0;
+    int i, a;
+    void (*pointer)(char *s, char elem, int *a);
     s = (char*)calloc(5, sizeof(char));
     printf("Введите строку: ");
     gets(s);
@@ -29,7 +30,7 @@ int main()
     scanf("%c", &elem);
     printf("Получившаяся строка: ");
     pointer = change;
-    pointer(s, elem, count, &a);
+    pointer(s, elem, &a);
     printf("\nКоличество замен: %d", a);
     return 0;
 }
