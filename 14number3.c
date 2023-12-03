@@ -27,6 +27,7 @@ int main()
     gets(s);
     printf("\nВведите элемент: ");
     scanf("%c", &elem);
+    printf("Получившаяся строка: ");
     pointer = change;
     pointer(s, elem, count, &a);
     printf("\nКоличество замен: %d", a);
