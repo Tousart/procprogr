@@ -18,6 +18,11 @@ void lalala(double *v1, double *v2, double *len, double *pr)
         *len = d2;
         *pr = (product / d2);
     }
+    else
+    {
+        *len = d1;
+        *pr = (product / d1);
+    }
 }
 
 int main()
